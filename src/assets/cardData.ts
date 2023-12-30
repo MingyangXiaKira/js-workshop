@@ -8,7 +8,7 @@ export interface CardData {
 const cardData = [
   {
     cardID: "1",
-    cardImg: "src/assets/image1.png",
+    cardImg: "public/image1.png",
     cardDesc: "Counter",
   },
   {
