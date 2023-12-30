@@ -5,7 +5,7 @@ import Cards from "../components/Cards";
 const Home = () => {
   return (
     <div>
-      <Header logo="../public/logo.png" />
+      <Header logo="./images/logo.png" />
       <Cards />
     </div>
   );

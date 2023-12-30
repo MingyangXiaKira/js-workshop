@@ -10,7 +10,7 @@ import WorkDetail3 from "./Pages/WorkDetails/3/WorkDetail3";
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter basename="https://MingyangXiaKira.github.io/js-workshop">
+    <BrowserRouter basename="/js-workshop">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/card/1" element={<WorkDetail1 />} />

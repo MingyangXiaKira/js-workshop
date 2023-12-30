@@ -8,22 +8,22 @@ export interface CardData {
 const cardData = [
   {
     cardID: "1",
-    cardImg: "public/image1.png",
+    cardImg: "./images/image1.png",
     cardDesc: "Counter",
   },
   {
     cardID: "2",
-    cardImg: "/path/to/image2.jpg",
+    cardImg: "",
     cardDesc: "Description for Card 2",
   },
   {
     cardID: "3",
-    cardImg: "/path/to/image2.jpg",
+    cardImg: "",
     cardDesc: "Description for Card 3",
   },
   {
     cardID: "4",
-    cardImg: "/path/to/image2.jpg",
+    cardImg: "",
     cardDesc: "Description for Card 4",
   },
 ];
