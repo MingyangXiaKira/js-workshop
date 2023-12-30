@@ -207,7 +207,7 @@ Error generating stack: `+i.message+`
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
-`,f4=({cardImg:e,cardID:t,cardDesc:n})=>{const r=g0(),o=()=>{r(`/card/${t}`)};return z.jsxs(s4,{children:[z.jsx(a4,{src:e}),z.jsxs(u4,{children:[z.jsx(c4,{children:n}),z.jsx(Di,{variant:"outlined",onClick:o,children:"Check"})]})]})},d4=[{cardID:"1",cardImg:"src/assets/image1.png",cardDesc:"Counter"},{cardID:"2",cardImg:"/path/to/image2.jpg",cardDesc:"Description for Card 2"},{cardID:"3",cardImg:"/path/to/image2.jpg",cardDesc:"Description for Card 3"},{cardID:"4",cardImg:"/path/to/image2.jpg",cardDesc:"Description for Card 4"}],p4=Ae.div`
+`,f4=({cardImg:e,cardID:t,cardDesc:n})=>{const r=g0(),o=()=>{r(`/card/${t}`)};return z.jsxs(s4,{children:[z.jsx(a4,{src:e}),z.jsxs(u4,{children:[z.jsx(c4,{children:n}),z.jsx(Di,{variant:"outlined",onClick:o,children:"Check"})]})]})},d4=[{cardID:"1",cardImg:"public/image1.png",cardDesc:"Counter"},{cardID:"2",cardImg:"/path/to/image2.jpg",cardDesc:"Description for Card 2"},{cardID:"3",cardImg:"/path/to/image2.jpg",cardDesc:"Description for Card 3"},{cardID:"4",cardImg:"/path/to/image2.jpg",cardDesc:"Description for Card 4"}],p4=Ae.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
