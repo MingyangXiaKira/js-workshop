@@ -21,6 +21,7 @@ const WorkDetail1: React.FC = () => {
   `;
   const TypeContainer = styled.div`
     display: flex;
+    gap: 15px;
   `;
   const Playground = styled.div`
     flex: 15;
@@ -45,7 +46,7 @@ const WorkDetail1: React.FC = () => {
             startIcon={<SiTypescript />}
             onClick={() => setViewMode("ts")}
           >
-            Vanilla TypeScript
+            TypeScript
           </Button>
         </TypeContainer>
       </ButtonContainer>

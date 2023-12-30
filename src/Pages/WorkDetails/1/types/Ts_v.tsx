@@ -1,5 +1,4 @@
-// Ts_1.tsx
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 class Counter {
   value: number;
@@ -21,35 +20,44 @@ class Counter {
   }
 }
 
-const Ts_1: React.FC = () => {
-  const countRef = useRef<HTMLParagraphElement>(null);
-  let counter: Counter;
+interface Ts_1State {
+  count: number;
+}
 
-  useEffect(() => {
-    // 初始化计数器实例
-    counter = new Counter(0, (newValue) => {
-      if (countRef.current) {
-        countRef.current.textContent = `Count: ${newValue}`;
-      }
-    });
-  }, []);
+class Ts_1 extends React.Component<{}, Ts_1State> {
+  private counter: Counter;
 
-  const increment = () => {
-    counter.increment();
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+
+    this.counter = new Counter(0, this.updateCount);
+  }
+
+  updateCount = (newValue: number) => {
+    this.setState({ count: newValue });
   };
 
-  const decrement = () => {
-    counter.decrement();
+  increment = () => {
+    this.counter.increment();
   };
 
-  return (
-    <div>
-      <h2>TypeScript Counter</h2>
-      <p ref={countRef}>Count: 0</p>
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
-    </div>
-  );
-};
+  decrement = () => {
+    this.counter.decrement();
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>TypeScript Counter</h2>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>+</button>
+        <button onClick={this.decrement}>-</button>
+      </div>
+    );
+  }
+}
 
 export default Ts_1;

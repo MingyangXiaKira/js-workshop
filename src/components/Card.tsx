@@ -29,7 +29,8 @@ const CardInfo = styled.div`
   margin-left: 20px;
 `;
 const CardDesc = styled.p`
-  font-size: 16px;
+  font-size: 26px;
+  font-weight: 400;
   color: #333;
   margin-bottom: 10px;
   display: flex;
